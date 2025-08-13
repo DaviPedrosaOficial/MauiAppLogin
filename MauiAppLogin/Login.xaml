@@ -3,10 +3,37 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppLogin.Login"
              Title="Login">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+
+    <!-- Criando a cor de fundo com o LinearGradientBrush, para fazer com que as cores se
+    mesclem -->
+    <ContentPage.Background>
+        <LinearGradientBrush>
+            <GradientStop Color="#00ceff" Offset="0.1"/>
+            <GradientStop Color="#995798" Offset="0.8"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+    
+    <VerticalStackLayout VerticalOptions="Center"
+                         Padding="25"
+                         Spacing="10">
+        
+        <Label  Text="Login"
+                HorizontalOptions="Center"
+                CharacterSpacing="5"
+                Margin="30"
+                FontSize="Large"/>
+        
+        <Label  Text="Usuário:"/>
+        <Entry x:Name="txt_usuario" />
+        
+        <Label Text="Senha:"/>
+        <Entry x:Name="txt_senha" IsPassword="True"/>
+
+        <Button x:Name="btn_login" Text="Logar" Clicked="btn_login_Clicked"/>
+
+        <Label Text="Ainda não é cadastrado?"
+               HorizontalOptions="Center"/>
+        <Button x:Name="btn_cadastro" Text="Cadastra-se"/>
+
     </VerticalStackLayout>
 </ContentPage>

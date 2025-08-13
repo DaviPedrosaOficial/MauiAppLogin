@@ -6,7 +6,8 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            //MainPage abaixo, representa qual será a tela inicial de nosso projeto, no nosso caso a tela de Login ;)
+            MainPage = new Login();
         }
 
         /* Método abaixo, é utilizado na personalização e configurações das janelas de nosso app, definindo alguns atributos
