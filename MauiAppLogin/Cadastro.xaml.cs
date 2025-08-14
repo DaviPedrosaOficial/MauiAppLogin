@@ -14,6 +14,6 @@ public partial class Cadastro : ContentPage
 
     private void btn_cadastro_cadastro_Clicked(object sender, EventArgs e)
     {
-        if()
+        
     }
 }
