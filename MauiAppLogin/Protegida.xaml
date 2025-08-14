@@ -3,10 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppLogin.Protegida"
              Title="Protegida">
+    <ContentPage.Background>
+        <LinearGradientBrush>
+            <GradientStop Color="#00ceff" Offset="0.1"/>
+            <GradientStop Color="#995798" Offset="0.8"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
     <VerticalStackLayout>
         <Label 
-            Text="Welcome to .NET MAUI!"
+            Text="Login concluido!"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+        
     </VerticalStackLayout>
 </ContentPage>

@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MauiAppLogin
+{
+    public class UsuarioService
+    {
+        //•	Criando uma variável que vai armazenará a única instância da classe UsuarioService.
+        private static UsuarioService _instance;
+        public static UsuarioService Instance => _instance ??= new UsuarioService();
+        /* 	Usando o operador ??= (null-coalescing assignment):
+            •	Se _instance for null, cria uma nova instância de UsuarioService e atribui a _instance.
+            •	Se já existir, apenas retorna a instância existente. */
+
+        public List<DadosUsuario> Usuarios { get; } = new()
+    {
+        new DadosUsuario() { Usuario = "admin", Senha = "123" },
+        new DadosUsuario() { Usuario = "user", Senha = "123" },
+        new DadosUsuario() { Usuario = "guest", Senha = "123" }
+    };
+    }
+}

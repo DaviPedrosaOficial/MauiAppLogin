@@ -33,7 +33,7 @@
 
         <Label Text="Ainda não é cadastrado?"
                HorizontalOptions="Center"/>
-        <Button x:Name="btn_cadastro" Text="Cadastra-se"/>
+        <Button x:Name="btn_cadastro" Text="Cadastra-se" Clicked="btn_cadastro_Clicked"/>
 
     </VerticalStackLayout>
 </ContentPage>
