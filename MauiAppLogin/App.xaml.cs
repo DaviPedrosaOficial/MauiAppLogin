@@ -8,6 +8,7 @@
 
             string? usuario_logado = null;
 
+            //Thread para verificar se o usuário já está logado
             Task.Run(async () => 
             {
                 // Verifica se já existe um usuário logado no armazenamento seguro

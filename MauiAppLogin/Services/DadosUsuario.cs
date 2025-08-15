@@ -1,4 +1,4 @@
-﻿namespace MauiAppLogin
+﻿namespace MauiAppLogin.Services
 {
     public class DadosUsuario
     {

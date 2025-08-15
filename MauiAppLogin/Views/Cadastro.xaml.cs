@@ -1,5 +1,7 @@
 
 
+using MauiAppLogin.Services;
+
 namespace MauiAppLogin;
 
 public partial class Cadastro : ContentPage
