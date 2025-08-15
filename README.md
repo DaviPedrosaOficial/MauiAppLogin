@@ -89,7 +89,7 @@
  Caso você tenha interesse em aprender mais sobre o .MAUI, recomendo que acesse a documentação oficial do .NET MAUI, onde você encontrará diversos tutoriais e exemplos de como utilizar a framework: <a href="https://learn.microsoft.com/pt-br/dotnet/maui/" target="blank">Documentação Oficial</a>.
 
  Deixarem também o link da documentação que te auxiliará a configurar o emulador Android em seu Visual Studio, onde o mesmo explica como criar um novo emulador e assim você poderá ver em tempo real como seu projeto .MAUI esta ficando no android: <a href="https://learn.microsoft.com/pt-br/dotnet/maui/android/emulator/device-manager?view=net-maui-9.0" target="blank">Clique aqui</a>.
-
+    git commit
  ## Algumas imagens do projeto:
 
  Tela de Login:
