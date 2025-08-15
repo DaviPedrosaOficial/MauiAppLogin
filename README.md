@@ -67,10 +67,8 @@
    <li><b>Utilização na prática (janelas do projeto) :</b>
 
    Ao pedirmos a nossa IDE para rodar o projeto, ela irá abrir uma janela de Login, onde você poderá utilizar os seguintes usuários já cadastrados:
-   > Usuario = "admin", Senha = "123"
-   <br>
-   > Usuario = "user", Senha = "123"
-   <br>
+   > Usuario = "admin", Senha = "123" <br>
+   > Usuario = "user", Senha = "123" <br>
    > Usuario = "guest", Senha = "123"
 
    <br>
