@@ -21,6 +21,7 @@
  #### Instruções de uso
 
  <ol>
-  <li>Clone ou Baixe o projeto a partir do botão code aqui no git <img href=""/></li>
+  <li>Clone ou Baixe o projeto a partir do botão code aqui no git 
+   <img src="\Resources\Images\telaGitCode.xcf" alt="Imagem ilustrativa de onde encontrar o botão 'code'"/></li>
  </ol>
  
