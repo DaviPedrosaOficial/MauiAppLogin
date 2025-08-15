@@ -19,7 +19,6 @@
         
         <Label  Text="Login"
                 HorizontalOptions="Center"
-                CharacterSpacing="5"
                 Margin="30"
                 FontSize="Large"/>
         

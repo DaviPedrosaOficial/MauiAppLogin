@@ -8,7 +8,7 @@ namespace MauiAppLogin
 {
     public class UsuarioService
     {
-        //•	Criando uma variável que vai armazenará a única instância da classe UsuarioService.
+        //•	Criando uma variável que armazenará a única instância da classe UsuarioService.
         private static UsuarioService _instance;
         public static UsuarioService Instance => _instance ??= new UsuarioService();
         /* 	Usando o operador ??= (null-coalescing assignment):

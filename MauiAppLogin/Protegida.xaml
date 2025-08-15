@@ -10,11 +10,22 @@
         </LinearGradientBrush>
     </ContentPage.Background>
 
-    <VerticalStackLayout>
+    <VerticalStackLayout VerticalOptions="Center"
+                         Margin="10"
+                         Spacing="20">
         <Label 
             Text="Login concluido!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            HorizontalOptions="Center"
+            FontSize="Large"/>
+        <Label
+            x:Name="lbl_txt_boasvindas"
+            HorizontalOptions="Center"/>
         
+        <Button 
+            x:Name="btn_deslogar"
+            Text="Desconectar"
+            Clicked="btn_deslogar_Clicked"/>
+
+
     </VerticalStackLayout>
 </ContentPage>

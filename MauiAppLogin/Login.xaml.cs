@@ -2,14 +2,13 @@ namespace MauiAppLogin;
 
 public partial class Login : ContentPage
 {
-    /* Como ainda a ideia do projeto é somente testar a funcionalidade da tela de login, irei criar os usuários diretamente
+	/* Como ainda a ideia do projeto é somente testar a funcionalidade da tela de login, irei criar os usuários diretamente
 			 no código */
-    var usuarios = UsuarioService.Instance.Usuarios;
-
+	private List<DadosUsuario> usuarios = new List<DadosUsuario>();
     public Login()
 	{
 		InitializeComponent();
-
+        usuarios = UsuarioService.Instance.Usuarios;
     }
 
     private async void btn_login_Clicked(object sender, EventArgs e)
@@ -17,9 +16,6 @@ public partial class Login : ContentPage
 		/* É interessante, sempre que formos fazer metodos que possam crashar o nosso programa, utilizar o try & catch para impedir
 		o mesmo */
 		try {
-
-			
-
 
 			// Recebendo os dados digitados pelo cliente
 			DadosUsuario dados_digitados = new DadosUsuario()
@@ -38,7 +34,9 @@ public partial class Login : ContentPage
 			}
 			else
 			{
+				txt_senha.Text = string.Empty;
 				throw new Exception("Usuário ou senha inválidos!");
+				
 			}
 
 
@@ -48,6 +46,7 @@ public partial class Login : ContentPage
         }
     }
 
+    //Redirecionando à página de cadastro
     private void btn_cadastro_Clicked(object sender, EventArgs e)
     {
 		App.Current.MainPage = new Cadastro();

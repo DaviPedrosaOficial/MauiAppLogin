@@ -6,7 +6,26 @@
         {
             InitializeComponent();
 
-            //MainPage abaixo, representa qual será a tela inicial de nosso projeto, no nosso caso a tela de Login ;)
+            string? usuario_logado = null;
+
+            Task.Run(async () => 
+            {
+                // Verifica se já existe um usuário logado no armazenamento seguro
+                usuario_logado = await SecureStorage.GetAsync("usuario_logado");
+
+                if (!string.IsNullOrEmpty(usuario_logado))
+                {
+                    // Se já existe um usuário logado, redireciona para a página protegida
+                    MainPage = new Protegida();
+                }
+                else
+                {
+                    // Caso contrário, redireciona para a página de login
+                    MainPage = new Login();
+                }
+            });
+
+            //MainPage abaixo, representa qual será a tela inicial de nosso projeto, no nosso caso a tela de Login
             MainPage = new Login();
         }
 
